@@ -1,0 +1,21 @@
+---
+title: Android
+---
+
+## [Aliyun Maven Mirror](https://maven.aliyun.com/mvn/view)
+
+## Gradle config($HOME/.gradle/gradle.properties)
+```
+# Proxy
+org.gradle.jvmargs=-DhttpProxyHost=127.0.0.1 -DhttpProxyPort=1080
+
+# Keystore
+RELEASE_STORE_FILE=path_to_key_store
+RELEASE_STORE_PASSWORD=password
+RELEASE_KEY_ALIAS=alias
+RELEASE_KEY_PASSWORD=password
+```
+
+ * [Android Asset Studio](https://reiszecke.github.io/AndroidAssetStudioFullsize/index.html)
+ * [How to create a release signed apk file using Gradle?](https://stackoverflow.com/a/21020469/2553400)
+ * [How To Set Android SDK Path In Windows And Mac](https://www.dev2qa.com/how-to-set-android-sdk-path-in-windows-and-mac/)

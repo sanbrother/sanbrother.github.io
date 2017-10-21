@@ -1,0 +1,30 @@
+---
+title: Phicomm N1 Armbian firmware compilation
+---
+
+### 选择Armbian的分支
+
+Armbian官方似乎没有对N1的直接支持，网友[150balbes](https://github.com/150balbes/)在官方的基础上，制作出了build环境及S905的Kernel。
+
+### 安装额外的Package
+
+```bash
+mkdir -p ~/Build-Armbian/userpatches/
+### cat > ~/Build-Armbian/userpatches/lib.config <<-EOF
+cat > ~/Build-Armbian/userpatches/lib.config << 'EOF'
+PACKAGE_LIST_ADDITIONAL="$PACKAGE_LIST_ADDITIONAL dosfstools armbian-config" # additional packages
+EOF
+```
+
+```
+./compile.sh  BOARD=aml-g12 BRANCH=current RELEASE=buster BUILD_MINIMAL=yes BUILD_DESKTOP=no KERNEL_ONLY=no KERNEL_CONFIGURE=no
+```
+
+### Install Jenkins
+```
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+```
+

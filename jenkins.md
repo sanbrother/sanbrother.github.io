@@ -1,0 +1,35 @@
+---
+title: Jenkins
+---
+
+## 添加Jenkins用户
+```
+useradd jenkins --create-home --home /custom/jenkins --user-group --shell /bin/bash
+```
+
+## 拷贝依赖的Lib的脚本
+```
+#!/bin/bash
+
+TARGET_ROOT=chroot
+list="$(ldd $1 | egrep -o '/lib.*\.[0-9]')"
+
+DIR="$( dirname "${TARGET_ROOT}$1" )"
+mkdir -p $DIR
+cp  -v "$1" "${TARGET_ROOT}$1";
+
+for i in $list
+do
+        DIR="$( dirname "${TARGET_ROOT}${i}" )"
+        mkdir -p $DIR
+
+        cp  -v "$i" "${TARGET_ROOT}${i}";
+done
+```
+
+## mount /dev
+```
+mount -o bind /dev /chroot/dev
+```
+
+ * [chroot環境を作る](http://d.hatena.ne.jp/kdaiba/20101229/p3)
