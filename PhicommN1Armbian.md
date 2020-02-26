@@ -6,6 +6,29 @@ title: Phicomm N1 Armbian firmware compilation
 
 Armbian官方似乎没有对N1的直接支持，网友[150balbes](https://github.com/150balbes/)在官方的基础上，制作出了build环境及S905的Kernel。
 
+### Static IP
+
+```bash
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug eno1
+iface eno1 inet static
+        address 10.1.43.56/24
+        gateway 10.1.43.1
+        # dns-* options are implemented by the resolvconf package, if installed
+        dns-nameservers 210.83.210.155
+```
+
+
+
 ### 安装额外的Package
 
 ```bash
