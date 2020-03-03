@@ -272,6 +272,7 @@ cmake -G"Visual Studio 15 2017" ../../zlib
  * [Maven - 打包可执行jar包](https://www.jianshu.com/p/0d85d0539b1a)
  * [How To Install and Configure OpenLDAP and phpLDAPadmin on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04)
  * [How to upgrade to latest Gitlab from version less then 10.8](https://medium.com/qunabu-interactive/how-to-upgrade-to-latest-gitlab-from-version-less-then-10-8-47a0b261edd1)
+ * [“Aw Snap!” Crash Makes a Comeback in Chrome 79](https://www.bleepingcomputer.com/news/google/-aw-snap-crash-makes-a-comeback-in-chrome-79/)
 
  ## Regular expression
  ```
