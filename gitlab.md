@@ -29,6 +29,14 @@ gitlab_rails['smtp_enable_starttls_auto'] = true
 # The magic
 gitlab_rails['smtp_openssl_verify_mode'] = 'none'
 
-gitlab_rails['gitlab_email_from'] = 'TODO'
+gitlab_rails['gitlab_email_:wq:from'] = 'TODO'
 gitlab_rails['gitlab_email_reply_to'] = 'TODO'
+```
+
+### Test
+
+```
+gitlab-rails console
+
+Notify.test_email('xxx@xxx.com', 'Message Subject', 'Message Body').deliver_now
 ```
