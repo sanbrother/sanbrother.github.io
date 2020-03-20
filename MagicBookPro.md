@@ -52,7 +52,18 @@ remove letter=G
 assign letter=T
 ```
 
-
-
 在Command Prompt下、执行Capture.cmd、如果顺利就备份成功了
+
+### 安装U盘的结构分析
+
+.
+├── Boot                => Windows 10 ISO根目录下的Boot
+├── Config              => 
+├── DiskScript          =>
+├── EFI                 => Windows 10 ISO根目录下的EFI
+├── image               => Windows 10 ISO根目录下的sources目录下的install.esd转换出来的文件
+├── Product             => 各机型的驱动
+├── sources             => Windows 10 ISO根目录下的sources?(只需要boot.wim?)
+├── bootmgr             => Windows 10 ISO根目录下的同名文件
+└── bootmgr.efi         => Windows 10 ISO根目录下的同名文件
 
