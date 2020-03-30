@@ -41,7 +41,7 @@ EOF
 
 ```
 ./compile.sh BOARD=aml-g12 BRANCH=current RELEASE=buster BUILD_MINIMAL=no BUILD_DESKTOP=no KERNEL_ONLY=no KERNEL_CONFIGURE=no
-./compile.sh BOARD=aml-s9xxx BRANCH=legacy RELEASE=stretch BUILD_MINIMAL=no BUILD_DESKTOP=no KERNEL_ONLY=no KERNEL_CONFIGURE=no
+./compile.sh BOARD=aml-s9xxx BRANCH=legacy RELEASE=stretch BUILD_MINIMAL=no BUILD_DESKTOP=no KERNEL_ONLY=no KERNEL_CONFIGURE=no COMPRESS_OUTPUTIMAGE=sha,gpg,gz
 ```
 
 ### Install Jenkins
