@@ -58,3 +58,8 @@ curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_install.
 }
 
 ```
+
+```
+systemctl status trojan.service
+systemctl enable trojan.service
+```
