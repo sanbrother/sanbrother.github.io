@@ -10,7 +10,7 @@ make && make install
 
 cd ~/trojan
 mkdir build && cd build
-cmake ../ -DOPENSSL_ROOT_DIR=/usr/local/ssl -DOPENSSL_LIBRARIES=/usr/local/ssl/lib
+cmake ../ -DFORCE_TCP_FASTOPEN=ON -DOPENSSL_ROOT_DIR=/usr/local/ssl -DOPENSSL_LIBRARIES=/usr/local/ssl/lib
 make && make install
 
 LD_LIBRARY_PATH=/usr/local/ssl/lib trojan
