@@ -2,6 +2,11 @@
 title: Memo
 ---
 
+## Running a program as a new window through SSH:
+```
+DISPLAY=:0.0 {program name}
+```
+
 ## Win10 store proxy
 ```
 # set
