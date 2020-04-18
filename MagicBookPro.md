@@ -55,7 +55,7 @@ assign letter=T
 在Command Prompt下、执行Capture.cmd、如果顺利就备份成功了
 
 ### 安装U盘的结构分析
-
+```
 .
 ├── Boot                => Windows 10 ISO根目录下的Boot
 ├── Config              => 
@@ -66,4 +66,4 @@ assign letter=T
 ├── sources             => Windows 10 ISO根目录下的sources?(只需要boot.wim?)
 ├── bootmgr             => Windows 10 ISO根目录下的同名文件
 └── bootmgr.efi         => Windows 10 ISO根目录下的同名文件
-
+```
