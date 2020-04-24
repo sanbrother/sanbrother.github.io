@@ -2,6 +2,13 @@
 title: Jenkins
 ---
 
+## Install
+```
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+apt-get update && apt-get install jenkins
+```
+
 ## Jenkins Speedup
 ```
 # See https://www.cnblogs.com/kazihuo/p/12598940.html
