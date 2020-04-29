@@ -24,3 +24,14 @@ export QT5PREFIX=/opt/Qt/v5.10.0-alpha
             -skip qtwebengine
 make -j$(nproc)
 ```
+
+```
+export QT5PREFIX=/opt/Qt/v5.10.0-alpha
+
+./configure -prefix $QT5PREFIX                          \
+            -confirm-license                            \
+            -opensource                                 \
+            -nomake examples                            \
+            -nomake tests                               \
+make -j$(nproc)
+```
