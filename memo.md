@@ -237,6 +237,7 @@ find . -name \*.php -type f -exec grep -Hn '$test' {} \+
 # screenshot
 apt-get install imagemagick
 xwd -root -display :0 | convert - jpg:- > screenshot.jpg
+xwd -root -display :0 | convert xwd:- screenshot.jpg
 
 # 
 convert imagein.tif -colorspace gray -colors 2 +dither -type bilevel imageout.tif
