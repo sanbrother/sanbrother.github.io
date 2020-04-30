@@ -33,5 +33,8 @@ export QT5PREFIX=/opt/Qt/v5.10.0-alpha
             -opensource                                 \
             -nomake examples                            \
             -nomake tests                               \
+            -syslog
 make -j$(nproc)
+
+export QT_LOGGING_TO_CONSOLE=0
 ```
