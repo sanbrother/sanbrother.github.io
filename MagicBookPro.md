@@ -72,3 +72,9 @@ assign letter=T
 ├── bootmgr             => Windows 10 ISO根目录下的同名文件
 └── bootmgr.efi         => Windows 10 ISO根目录下的同名文件
 ```
+
+### 重复的文件夹
+```
+Boot => Config\F10\WinPE\Boot
+```
+
