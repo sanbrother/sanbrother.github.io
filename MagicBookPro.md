@@ -76,5 +76,6 @@ assign letter=T
 ### 重复的文件夹
 ```
 Boot => Config\F10\WinPE\Boot
+EFI => Config\F10\WinPE\EFI
 ```
 
