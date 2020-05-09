@@ -6,6 +6,7 @@ diskpart /s scriptname.txt
 
 ### WIM
 ```
+dism /Get-WimInfo /WimFile:install.esd
 dism /export-image /SourceImageFile:install.esd /SourceIndex:1 /DestinationImageFile:D:\install.wim /Compress:max /CheckIntegrity
 dism /Split-Image /ImageFile:D:\install.wim /SWMFile:D:\wim_splitted\install.swm /FileSize:3000
 ```
