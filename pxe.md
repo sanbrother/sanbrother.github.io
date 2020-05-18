@@ -6,7 +6,8 @@ apt-get install syslinux pxelinux nfs-kernel-server
 
 ### /etc/exports
 ```
-/srv/nfs *(ro,sync,no_wdelay,insecure_locks,no_root_squash,insecure,no_subtree_check)
+# the magic => crossmnt
+/srv/nfs *(ro,sync,no_wdelay,insecure_locks,no_root_squash,insecure,no_subtree_check,crossmnt)
 ```
 
 ```
