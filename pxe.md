@@ -1,3 +1,5 @@
+## https://linuxhint.com/pxe_boot_ubuntu_server/
+
 ```
 apt-get install syslinux pxelinux
 
