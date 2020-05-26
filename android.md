@@ -24,3 +24,4 @@ RELEASE_KEY_PASSWORD=password
  * [Android Asset Studio](https://reiszecke.github.io/AndroidAssetStudioFullsize/index.html)
  * [How to create a release signed apk file using Gradle?](https://stackoverflow.com/a/21020469/2553400)
  * [How To Set Android SDK Path In Windows And Mac](https://www.dev2qa.com/how-to-set-android-sdk-path-in-windows-and-mac/)
+ * [使用 Android 模拟器虚拟设备](https://source.android.com/setup/create/avd)
