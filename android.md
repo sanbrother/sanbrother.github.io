@@ -2,6 +2,11 @@
 title: Android
 ---
 
+## Install via sdkmanager commandline tools
+```
+~/tools/bin/sdkmanager --sdk_root=/home/cocoa/Downloads/sdk --proxy=http --proxy_host=10.1.43.235 --proxy_port=3128 --install "system-images;android-28;google_apis;x86_64"
+```
+
 ## [Aliyun Maven Mirror](https://maven.aliyun.com/mvn/view)
 
 ## Gradle config($HOME/.gradle/gradle.properties)
