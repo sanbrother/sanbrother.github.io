@@ -29,4 +29,7 @@ RELEASE_KEY_PASSWORD=password
  ```
  repo init -u https://android.googlesource.com/platform/manifest -b android-9.0.0_r34 --depth=1
  repo sync -j$(nproc)
+ 
+ # ????
+ make -j$(nproc) sdk sdk_repo
  ```
