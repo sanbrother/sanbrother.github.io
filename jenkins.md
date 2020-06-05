@@ -4,6 +4,7 @@ title: Jenkins
 
 ## Install
 ```
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9B7D32F2D50582E6
 wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 apt-get update && apt-get install jenkins
