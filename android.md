@@ -2,6 +2,12 @@
 title: Android
 ---
 
+## See Move Android Studio AVD folder to a new location
+```
+# See https://www.mysysadmintips.com/windows/clients/761-move-android-studio-avd-folder-to-a-new-location
+ANDROID_SDK_HOME
+```
+
 ## Install via sdkmanager commandline tools
 ```
 ~/tools/bin/sdkmanager --sdk_root=/home/cocoa/Downloads/sdk --proxy=http --proxy_host=10.1.43.235 --proxy_port=3128 --install "system-images;android-28;google_apis;x86_64"
