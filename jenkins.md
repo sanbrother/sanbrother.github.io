@@ -2,6 +2,11 @@
 title: Jenkins
 ---
 
+## SMTP
+```
+openssl x509 -in <(openssl s_client -connect smtp.neusoft.com:587 -starttls smtp -prexit 2>/dev/null) -out ~/example.crt
+```
+
 ## Install
 ```
 apt-key adv --keyserver keyserver.ubuntu.com --keyserver-option http-proxy=http://10.1.43.235:3128 --recv-keys 9B7D32F2D50582E6
