@@ -11,6 +11,9 @@ keytool -v -printcert -file ~/ca.der
 
 # import
 keytool -importcert -alias startssl -keystore /var/lib/jenkins/cacerts -storepass password -file ~/ca.der
+
+# /etc/default/jenkins
+## JAVA_ARGS="-Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Djavax.net.ssl.trustStore=/var/lib/jenkins/cacerts -Djavax.net.ssl.trustStorePassword=password"
 ```
 
 ## Install
