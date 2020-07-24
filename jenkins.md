@@ -4,7 +4,11 @@ title: Jenkins
 
 ## SMTP
 ```
-openssl x509 -in <(openssl s_client -connect smtp.neusoft.com:587 -starttls smtp -prexit 2>/dev/null) -out ~/example.crt
+openssl x509 -in <(openssl s_client -connect smtp.neusoft.com:587 -starttls smtp -prexit 2>/dev/null) -out ~/ca.pem
+openssl x509 -in ca.pem -inform pem -out ca.der -outform der
+# validate
+keytool -v -printcert -file ca.der
+
 ```
 
 ## Install
