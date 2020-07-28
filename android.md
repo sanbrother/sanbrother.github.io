@@ -2,6 +2,10 @@
 title: Android
 ---
 
+## Android HIDL
+ * https://chendongqi.me/2019/09/08/hidl-binderizd/
+ * https://blog.csdn.net/Invoker123/article/details/84868260
+
 ## See Move Android Studio AVD folder to a new location
 ```
 # See https://www.mysysadmintips.com/windows/clients/761-move-android-studio-avd-folder-to-a-new-location
