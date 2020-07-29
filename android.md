@@ -2,6 +2,9 @@
 title: Android
 ---
 
+## Open Source State Machine library
+ * http://smc.sourceforge.net/
+
 ## Android HIDL
  * https://chendongqi.me/2019/09/08/hidl-binderizd/
  * https://blog.csdn.net/Invoker123/article/details/84868260
