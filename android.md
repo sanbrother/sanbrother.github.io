@@ -6,6 +6,7 @@ title: Android
  * http://smc.sourceforge.net/
 
 ## Android HIDL
+ * https://devarea.com/android-hidl-and-project-treble/
  * https://chendongqi.me/2019/09/08/hidl-binderizd/
  * https://blog.csdn.net/Invoker123/article/details/84868260
 
