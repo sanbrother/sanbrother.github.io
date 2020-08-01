@@ -12,6 +12,17 @@ interface ISimphw {
 };
 ```
 
+## Generate the HAL files
+```
+PACKAGE=android.hardware.simple@2.0
+LOC=~/workspace/aosp/hardware/interfaces/simple/2.0/default/
+# make hidl-gen -j64
+# Generate C++ code
+hidl-gen -o $LOC -Lc++-impl -randroid.hardware:hardware/interfaces -randroid.hidl:system/libhidl/transport $PACKAGE
+# Generate Android.bp code (under default/)
+hidl-gen -o $LOC -Landroidbp-impl -randroid.hardware:hardware/interfaces -randroid.hidl:system/libhidl/transport $PACKAGE
+```
+
 ## add 2 empty files to hardware/interfaces/simple/2.0/default:
  * ```android.hardware.simple@2.0-service.rc```
  * ```service.cpp```
