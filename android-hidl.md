@@ -1,6 +1,10 @@
 Great thanks to https://devarea.com/android-hidl-and-project-treble/
 
 ```
+make/target/board/generic_x86_64/BoardConfig.mk:BOARD_VENDORIMAGE_PARTITION_SIZE := 100000000
+```
+
+```
 cd aosp
 mkdir -p hardware/interfaces/simple/2.0/default
 ```
