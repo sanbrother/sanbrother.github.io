@@ -1,3 +1,5 @@
+Great thanks to https://devarea.com/android-hidl-and-project-treble/
+
 ```
 cd aosp
 mkdir -p hardware/interfaces/simple/2.0/default
@@ -21,6 +23,11 @@ LOC=~/workspace/aosp/hardware/interfaces/simple/2.0/default/
 hidl-gen -o $LOC -Lc++-impl -randroid.hardware:hardware/interfaces -randroid.hidl:system/libhidl/transport $PACKAGE
 # Generate Android.bp code (under default/)
 hidl-gen -o $LOC -Landroidbp-impl -randroid.hardware:hardware/interfaces -randroid.hidl:system/libhidl/transport $PACKAGE
+```
+
+## And to update all makefile (Android.mk, Android.bp) run:
+```
+./hardware/interfaces/update-makefiles.sh
 ```
 
 ## add 2 empty files to hardware/interfaces/simple/2.0/default:
