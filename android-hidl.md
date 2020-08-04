@@ -111,3 +111,33 @@ index 712e91c..ddbed4e 100644
  VNDK-core: android.hardware.soundtrigger@2.0-core.so
  VNDK-core: android.hardware.soundtrigger@2.1.so
 ```
+## device/generic/goldfish/
+```diff
+diff --git a/manifest.xml b/manifest.xml
+index 38a22d6..604007d 100644
+--- a/manifest.xml
++++ b/manifest.xml
+@@ -1,4 +1,13 @@
+ <manifest version="1.0" type="device" target-level="3">
++    <hal format="hidl">
++        <name>android.hardware.simple</name>
++        <transport>hwbinder</transport>
++        <version>2.0</version>
++        <interface>
++            <name>ISimphw</name>
++            <instance>default</instance>
++        </interface>
++    </hal>
+     <hal format="hidl">
+         <name>android.hardware.drm</name>
+         <transport>hwbinder</transport>
+diff --git a/sepolicy/common/init.te b/sepolicy/common/init.te
+index 84a4e8d..30d2e03 100644
+--- a/sepolicy/common/init.te
++++ b/sepolicy/common/init.te
+@@ -1,2 +1,4 @@
+ allow init tmpfs:lnk_file create_file_perms;
++allow init vendor_file:file { execute };
++allow init su:process { transition };
+ dontaudit init kernel:system module_request;
+```
