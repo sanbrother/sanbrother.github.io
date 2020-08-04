@@ -40,7 +40,7 @@ hidl-gen -o $LOC -Landroidbp-impl -randroid.hardware:hardware/interfaces -randro
 
 # Files modified
 ## ~/aosp/build/make
-```
+```diff
 diff --git a/target/board/generic_x86_64/BoardConfig.mk b/target/board/generic_x86_64/BoardConfig.mk
 index 5bcb9ad..0b51cc8 100755
 --- a/target/board/generic_x86_64/BoardConfig.mk
