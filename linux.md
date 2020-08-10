@@ -8,8 +8,10 @@ cp /boot/config-xxx .config
 make oldconfig
 make menuconfig
 make EXTRAVERSION=-mock -j$(nproc)
-make modules_install
-make install
+sudo make modules_install
+sudo make install
+# ???
+sudo update-grub
 ```
 
 ## [Compile kernel module](https://wiki.archlinux.org/index.php/Compile_kernel_module)
