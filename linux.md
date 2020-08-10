@@ -7,6 +7,7 @@ title : Linux
 cp /boot/config-xxx .config
 make oldconfig
 make menuconfig
+make EXTRAVERSION=-mock -j$(nproc)
 ```
 
 ## [Compile kernel module](https://wiki.archlinux.org/index.php/Compile_kernel_module)
