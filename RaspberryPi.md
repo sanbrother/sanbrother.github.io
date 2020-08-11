@@ -4,6 +4,7 @@ title: Raspberry Pi
 
 * [How to set up up your Raspberry Pi to have a static IP address](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)  
 * [Livestreaming with a Raspberry Pi](https://ant.sr/streaming-webcam-raspi/)  
+* [https://elinux.org/RPi_GPIO_Code_Samples](https://elinux.org/RPi_GPIO_Code_Samples)
 
 ```
 # Edit the file /etc/dhcpcd.conf as follows:
