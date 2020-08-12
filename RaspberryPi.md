@@ -92,3 +92,36 @@ dtparam=audio=on
 # The magic, enable serial port console
 enable_uart=1
 ```
+
+## Blink
+```c
+#include <wiringPi.h>
+#include <stdio.h>
+
+#define PIN_LED 0
+#define PIN_KEY 1
+
+int main(void)
+{
+  wiringPiSetup();
+  pinMode(PIN_LED, OUTPUT);
+  pinMode(PIN_KEY, INPUT);
+  pullUpDnControl(PIN_KEY, PUD_DOWN);
+
+  digitalWrite(PIN_LED, LOW);
+
+  for (;;)
+  {
+    if (digitalRead(PIN_KEY) == HIGH)
+    {
+      digitalWrite(PIN_LED, HIGH);
+      delay(1000);
+      digitalWrite(PIN_LED, LOW);
+      delay(1000);
+      printf("^_^\n");
+    }
+  }
+
+  return 0;
+}
+```
