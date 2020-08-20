@@ -2,6 +2,12 @@
 title : Linux
 ---
 
+## NTP
+```
+# chrony
+server time.neusoft.com iburst minpoll 8 maxpoll 14
+```
+
 ## Compile Kernel
 ```shell
 cp /boot/config-xxx .config
