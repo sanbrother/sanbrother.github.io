@@ -50,7 +50,7 @@ title: Arduino
 
 ## 基础知识
 
-![](D:\01.Git\github\sanbrother\sanbrother.github.io\images\FI8KJ0RIYGFJDYW.jpg)
+![](images/FI8KJ0RIYGFJDYW.jpg)
 
 使用下拉电阻时、5V电源与输入PIN之间不需要电阻？会不会电流过大？
 
