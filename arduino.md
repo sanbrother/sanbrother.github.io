@@ -47,3 +47,21 @@ title: Arduino
 
   ![image](https://i0.wp.com/henrysbench.capnfatz.com/wp-content/uploads/2015/05/Arduino-25V-Sensor-Module.png)
 - [Effects of Varying I2C Pull-Up Resistors](http://dsscircuits.com/articles/effects-of-varying-i2c-pull-up-resistors)
+
+## 基础知识
+
+![](D:\01.Git\github\sanbrother\sanbrother.github.io\images\FI8KJ0RIYGFJDYW.jpg)
+
+使用下拉电阻时、5V电源与输入PIN之间不需要电阻？会不会电流过大？
+
+不会、以下是网友的回复：
+
+```
+7-12V is the maximum input voltage you can apply to the external DC input power jack.
+
+The analog input pin voltage is limited to 0V-5V. Anything outside that range will damage your microcontroller.
+
+And to clarify, you do not "input" current into a pin. The pin decides how much current to draw in response to an applied voltage. If your applied voltage is in the range 0V-5V then the amount of current that will flow into the pin is very close to 0. Just make sure you configure the analog pin as an input, and not an output.
+```
+
+Arduino的PIN做为输入、可能相当于接了个“无限大的电阻”。如果是输出呢？可能就要小心了
