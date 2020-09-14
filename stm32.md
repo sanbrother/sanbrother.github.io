@@ -18,6 +18,9 @@ title: STM32
 ### STM32F030C8T6开发板上的LED
 PORTC的Pin13
 
+### Softwares
+ * [LTspice电路模拟器](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+
 ### STM32CubeMX Tutorial Series
  * [https://www.waveshare.com/wiki/STM32CubeMX_Tutorial_Series](https://www.waveshare.com/wiki/STM32CubeMX_Tutorial_Series)
 
