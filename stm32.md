@@ -2,6 +2,14 @@
 title: STM32
 ---
 
+### STM32F030C8T6开发板使用ST-LINK V2下载程序的连线方法
+| STM32F030C8T6开发板 | ST-LINK |
+| --- | --- |
+| 3.3V | 3.3V |
+| GND | GND |
+| SWDIO | TCK |
+| SWCLK | TMS |
+
 ### STM32F030C8T6开发板使用USB TTL下载程序的连线方法
 
 | STM32F030C8T6开发板 | USB TTL |
