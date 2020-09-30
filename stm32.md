@@ -3,15 +3,15 @@ title: STM32
 ---
 
 ### STM32F030C8T6开发板使用ST-LINK V2下载程序的连线方法
- * 这个板子的SWDIO和SWCLK似乎接反了
+ * ~~这个板子的SWDIO和SWCLK似乎接反了~~ (竟然是非官方的ST-LINK的引脚不对)
  * 板子需要独立供电
 
 | STM32F030C8T6开发板 | ST-LINK |
 | --- | --- |
 | 3.3V | 3.3V |
 | GND | GND |
-| SWDIO | TCK |
-| SWCLK | TMS |
+| SWDIO | TMS |
+| SWCLK | TCK |
 
 ### STM32F030C8T6开发板使用USB TTL下载程序的连线方法
 
