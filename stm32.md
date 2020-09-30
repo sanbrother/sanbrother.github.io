@@ -1,6 +1,8 @@
 ---
 title: STM32
 ---
+### SWD调试的方法（使用Stm32CubeMX配置）
+ * 确保SYS => Debug => Serial Wire、通过UART等烧录一次、以后每个工程都这样配置、就可以一直用SWD烧录和调试了
 
 ### STM32F030C8T6开发板使用ST-LINK V2下载程序的连线方法
  * ~~这个板子的SWDIO和SWCLK似乎接反了~~ (竟然是非官方的ST-LINK的引脚不对)
