@@ -39,3 +39,18 @@ SCK (Serial Clock) - The clock pulses which synchronize data transmission genera
 3 => DAT/MISO
 4 => CMD/MOSI
 ```
+
+## STM32 Cube MX Configuration
+
+| Mode                  | Full-Duplex Master       |
+| --------------------- | ------------------------ |
+| Hardware NSS Signal   | Disable                  |
+| Frame Format          | Motorola                 |
+| Data Size             | 8 Bits                   |
+| First Bit             | LSB First                |
+| Prescaler             | 128 (???)                |
+| Baud Rate             | 375.0 KBits/s (自动生成) |
+| Clock Polarity (CPOL) | High                     |
+| Clock Phase (CPHA)    | 2 Edge                   |
+| CRC Calculation       | Disabled                 |
+| NSS Signal Type       | Software                 |
