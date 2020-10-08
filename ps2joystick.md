@@ -51,7 +51,7 @@ CLK : 500kH/z, normally high on. The communication appears to be SPI bus. We’v
 | Frame Format          | Motorola                 |
 | Data Size             | 8 Bits                   |
 | First Bit             | LSB First                |
-| Prescaler             | 128 (???)                |
+| Prescaler             | 128 (256???)                |
 | Baud Rate             | 375.0 KBits/s (自动生成) |
 | Clock Polarity (CPOL) | High                     |
 | Clock Phase (CPHA)    | 2 Edge                   |
