@@ -64,4 +64,4 @@ CLK : 500kH/z, normally high on. The communication appears to be SPI bus. We’v
 
 ## PSX协议总结
 与SPI协议极度相似、差别在于
- * SPI可以连续传输（以Byte为单位）、PSX一次只传输一个Byte、直到收到ACK再传输下一个Byte
+ * SPI一次可以传输多个Byte、PSX一次只传输一个Byte、直到收到ACK再传输下一个Byte
