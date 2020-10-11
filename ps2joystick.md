@@ -61,3 +61,7 @@ CLK : 500kH/z, normally high on. The communication appears to be SPI bus. We’v
 ## 手柄转接板电路分析
 
 只有到了LDC3G/A19T，以及若干个电阻、看来不用它也行、直接连接收器可以节约空间
+
+## PSX协议总结
+与SPI协议极度相似、差别在于
+ * SPI可以连续传输（以Byte为单位）、PSX一次只传输一个Byte、直到收到ACK再传输下一个Byte
