@@ -251,6 +251,7 @@ cmake -G"Visual Studio 15 2017" ../../zlib
 ```
 
 ## Useful Websites
+ * [How to add an extra second hard drive on Linux LVM and increase the size of storage](https://www.cyberciti.biz/faq/howto-add-disk-to-lvm-volume-on-linux-to-increase-size-of-pool/)
  * [How to Use SSH Tunneling to Access Restricted Servers and Browse Securely](https://www.howtogeek.com/168145/how-to-use-ssh-tunneling/)
  * [How to start a vnc server for the actual display (scraping) with TigerVNC
 ](https://www.howtoforge.com/tutorial/how-to-start-a-vnc-server-for-the-actual-display-scraping-with-tigervnc/)
