@@ -9,3 +9,5 @@
 https://www.st.com/en/development-tools/stm8-software-development-tools.html?querycriteria=productId=SC2108
 
 ![image](./images/STM8L101F3_BB.png)
+
+STM8L101F3P6
