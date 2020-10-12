@@ -2,6 +2,7 @@
  * [成都EByte资料下载](http://www.ebyte.com/data-download.aspx?id=41&pid=32)
 
 ### STM8L101F3
+ * STM8L101F3P6
 
 ![image](./images/nRF24L01_Test_Board.jpg)  
 ![image](./images/nRF24L01_Test_Board_SWD.jpg)
