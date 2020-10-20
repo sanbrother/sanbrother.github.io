@@ -2,6 +2,22 @@
 title : Linux
 ---
 
+## FreeRDP shortcut
+/usr/share/applications/freerdp.desktop
+```
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=gnome-panel-launcher
+Name[en_US]=xfreerdp
+Exec=xfreerdp +clipboard /monitors:1 /multimon /fonts /u:user /p:password /v:10.1.43.8
+Name=rdp
+Icon=gnome-panel-launcher
+Comment=1440x800
+```
+
 ## Fix terminal title after SSH remote logging to another machine
 ```
 # Solution: add some functions ~/.bashrc to do something after ssh and su commands
