@@ -2,6 +2,31 @@
 title : Linux
 ---
 
+## Fix terminal title after SSH remote logging to another machine
+```
+# Solution: add some functions ~/.bashrc to do something after ssh and su commands
+
+function title()
+{
+   # change the title of the current window or tab
+   echo -ne "\033]0;$*\007"
+}
+
+function ssh()
+{
+   /usr/bin/ssh "$@"
+   # revert the window title after the ssh command
+   title $USER@$HOST
+}
+
+function su()
+{
+   /bin/su "$@"
+   # revert the window title after the su command
+   title $USER@$HOST
+}
+```
+
 ## NTP
 ```
 # chrony
