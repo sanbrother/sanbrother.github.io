@@ -25,6 +25,12 @@ function su()
    # revert the window title after the su command
    title $USER@$HOST
 }
+
+# And .bash_profile (if necessary)
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
 ```
 
 ## NTP
