@@ -99,6 +99,7 @@ sudo update-grub
 
 ## [Compile kernel module](https://wiki.archlinux.org/index.php/Compile_kernel_module)
 ## [Are message queues obsolete in linux?](https://stackoverflow.com/questions/967335/are-message-queues-obsolete-in-linux)
+## [How to add an extra second hard drive on Linux LVM and increase the size of storage](https://www.cyberciti.biz/faq/howto-add-disk-to-lvm-volume-on-linux-to-increase-size-of-pool/)
 
 ## Dummy HCD
  * [https://blog.gimx.fr/dummy_hcd/](https://blog.gimx.fr/dummy_hcd/)
