@@ -2,6 +2,12 @@
 title: Jenkins
 ---
 
+## Incorrect java version?
+```
+apt-get install openjdk-8-jdk
+update-alternatives --config java
+```
+
 ## SMTP
 ```
 openssl x509 -in <(openssl s_client -connect smtp.neusoft.com:587 -starttls smtp -prexit 2>/dev/null) -out ~/ca.pem
