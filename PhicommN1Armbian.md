@@ -1,6 +1,6 @@
 ## Armbian packages
-[armbian20.10安装](https://www.jianshu.com/p/bcb4777023bc)
-[https://users.armbian.com/balbes150/arm-64/](https://users.armbian.com/balbes150/arm-64/)
+ * [armbian20.10安装](https://www.jianshu.com/p/bcb4777023bc)
+ * [https://users.armbian.com/balbes150/arm-64/](https://users.armbian.com/balbes150/arm-64/)
 
 ---
 title: Phicomm N1 Armbian firmware compilation
