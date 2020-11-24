@@ -1,3 +1,4 @@
+* [斐讯N1探索手记#2 – 使用ddbr恢复官改系统](https://luotianyi.vc/1346.html)
 * [Pi-hole® Network-wide Ad Blocking](https://pi-hole.net/)
 * [斐讯 N1 降级刷 Armbian，安装 OMV 作为家用小型 NAS 折腾记录](https://www.shephe.com/2019/07/phicomm-n1-armbian-omv-nas/)
 * [Amlogic wiki ! (S802 S805 S812 S905 S905X s912)](https://github.com/150balbes/Amlogic_s905/wiki)
