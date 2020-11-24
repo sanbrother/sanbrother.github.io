@@ -13,3 +13,5 @@ title: OneBot Sensor Development Board
  * Clock polarity : 1
  * Clock phase : 0
  * MSB-first
+
+## 304Hz 50% duty
