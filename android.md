@@ -2,6 +2,12 @@
 title: Android
 ---
 
+## Debug with Android Studio
+```
+mmm development/tools/idegen && development/tools/idegen/idegen.sh
+open android.ipr from Android Studio
+```
+
 ## Android Build System
  * [Android Build System](https://elinux.org/Android_Build_System)
 
