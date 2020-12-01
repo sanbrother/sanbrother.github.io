@@ -8,6 +8,8 @@ mmm development/tools/idegen && development/tools/idegen/idegen.sh
 open android.ipr from Android Studio
 ```
 
+ * [Use platform.pk8 and platform.x509.pem to generate Android studio signature files under Windows](https://www.programmersought.com/article/85363994040/)
+
 ## Android Build System
  * [Android Build System](https://elinux.org/Android_Build_System)
 
