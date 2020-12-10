@@ -2,6 +2,14 @@
 title: Android
 ---
 
+##
+```
+source build/envsetup.sh
+make blueprint_tools
+# Now you can simply run androidmk and the command will be in your PATH.
+androidmk
+```
+
 ## Debug with Android Studio
 ```
 mmm development/tools/idegen && development/tools/idegen/idegen.sh
