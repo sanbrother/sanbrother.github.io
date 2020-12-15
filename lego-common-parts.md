@@ -12,7 +12,7 @@
 | ![img](https://brickarchitect.com/content/parts/18654.png)   | 18654   | Technic Pin Connector Round 1L [Beam]                        |
 | ![img](https://brickarchitect.com/content/parts/11214.png)   | 11214   | Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle |
 | ![img](https://brickarchitect.com/content/parts/6536.png)    | 6536    | Technic Axle and Pin Connector Perpendicular                 |
-| ![img](https://brickarchitect.com/content/parts/32316.png)   | 32316   | Technic Beam 1 x 5 Thick                                     |
+| ![img](https://brickarchitect.com/content/parts/32316.png)   | 32316   | Liftarm / Technic Beam 1 x 5 Thick                           |
 | ![img](https://brickarchitect.com/content/parts/62462.png)   | 62462   | Technic Pin Connector Round [Slotted]                        |
 | ![img](https://brickarchitect.com/content/parts/60483.png)   | 60483   | Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole         |
 | ![img](https://brickarchitect.com/content/parts/32140.png)   | 32140   | Technic Beam 2 x 4 L-Shape Thick                             |
