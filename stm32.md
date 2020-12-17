@@ -28,6 +28,10 @@ title: STM32
 
 ![image](images/STM32F030C8T6_board.jpg)
 
+### STM32F030C8T6开发板被Lock了怎么办？
+BOOT0 => 3.3V
+押下RESET、抬起、马上连接设备（Read Unprotect应该被选中）
+
 ### STM32F030C8T6开发板上的LED
 PORTC的Pin13
 
