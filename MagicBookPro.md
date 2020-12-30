@@ -1,6 +1,8 @@
 ### Office
 ```
 https://account.microsoft.com/services/
+# Download link
+https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/Office/Data/setuphomestudent2019retail.x64.zh-cn.exe
 ```
 
 ### 自动分区
