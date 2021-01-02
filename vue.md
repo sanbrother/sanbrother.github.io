@@ -2,6 +2,11 @@
 title: Vue.js
 ---
 
+## New
+```bash
+npm install -g @vue/cli
+```
+
 ```
 npm config set proxy "http://IP:PORT"
 npm config set https-proxy "http://IP:PORT"
