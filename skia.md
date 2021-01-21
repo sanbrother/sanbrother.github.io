@@ -10,5 +10,7 @@ gn gen out/Shared --args="is_debug=false is_official_build=true is_component_bui
 
 ### build
 ```bash
+call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat" -arch=x64
+
 ninja -C out/Shared
 ```
