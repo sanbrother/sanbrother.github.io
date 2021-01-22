@@ -26,5 +26,6 @@ apt-get install libjpeg-dev libharfbuzz-dev libicu-dev libpng-dev libwebp-dev li
 
 ### compile SkiaSDLExample
 ```
-g++ -DSK_GL -std=c++17 SkiaSDLExample.cpp -I.. -I/usr/include/SDL2 -L../out/Shared -lskia -lGL -lSDL2
+# g++ -DSK_GL -std=c++17 SkiaSDLExample.cpp -I.. -I/usr/include/SDL2 -L../out/Shared -lskia -lGL -lSDL2
+g++ -DGR_GL_LOG_CALLS=0 -DGR_GL_CHECK_ERROR=0 -DSK_GL -std=c++17 SkiaSDLExample.cpp -I.. -I/usr/include/SDL2 -lGL -lSDL2 "$SKIA_LIB_DIR"/libskia.* -Wl,-rpath -Wl,"$SKIA_LIB_DIR"
 ```
