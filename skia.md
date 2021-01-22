@@ -18,3 +18,8 @@ call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tool
 
 ninja -C out/Shared
 ```
+
+### apt
+```
+apt-get install libjpeg-dev libharfbuzz-dev libicu-dev libpng-dev libwebp-dev libfontconfig1-dev libsdl2-dev
+```
