@@ -23,3 +23,8 @@ ninja -C out/Shared
 ```
 apt-get install libjpeg-dev libharfbuzz-dev libicu-dev libpng-dev libwebp-dev libfontconfig1-dev libsdl2-dev
 ```
+
+### compile SkiaSDLExample
+```
+g++ -DSK_GL -std=c++17 SkiaSDLExample.cpp -I.. -I/usr/include/SDL2 -L../out/Shared -lskia -lGL -lSDL2
+```
