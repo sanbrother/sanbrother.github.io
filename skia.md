@@ -1,3 +1,8 @@
+### Skia 编译条件研究
+```
+is_skia_dev_build = is_skia_standalone && !is_official_build
+```
+
 ### 配置编译为静态库
 ```bash
 gn gen out/Static --args="is_debug=false is_official_build=true skia_use_system_expat=false skia_use_system_libjpeg_turbo=false skia_use_system_libpng=false skia_use_system_libwebp=false skia_use_system_zlib=false"
