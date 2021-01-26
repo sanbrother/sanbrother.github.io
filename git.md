@@ -1,4 +1,9 @@
 [GITLAB ON RASPBERRY PI](https://x-team.com/blog/alternatives-to-github-including-github/)
+
+```
+git config core.fileMode false
+```
+
 ```
 #!/usr/bin/env bash
 
