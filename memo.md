@@ -2,6 +2,11 @@
 title: Memo
 ---
 
+## Remote desktop
+```
+reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters" /f /v AllowEncryptionOracle /t REG_DWORD /d 2
+```
+
 ## Running a program as a new window through SSH:
 ```
 DISPLAY=:0.0 {program name}
