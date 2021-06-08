@@ -3,6 +3,9 @@ title: Android
 ---
 
 ## [GDB over ADB](https://wladimir-tm4pda.github.io/porting/debugging_gdb.html)
+```bash
+gdbserver :5039 --attach `pidof android.hardware.audio@2.0-service`
+```
 
 ## Where can i find androidmk tool to convert Android.mk to Android.bp?
 ```
