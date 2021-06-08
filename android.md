@@ -2,6 +2,8 @@
 title: Android
 ---
 
+## [GDB over ADB](https://wladimir-tm4pda.github.io/porting/debugging_gdb.html)
+
 ## Where can i find androidmk tool to convert Android.mk to Android.bp?
 ```
 source build/envsetup.sh
