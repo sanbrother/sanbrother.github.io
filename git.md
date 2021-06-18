@@ -5,6 +5,11 @@
 git config --global --add alias.permission-resetb '!git diff -p --no-ext-diff --no-color --diff-filter=d | grep -E "^(diff|old mode|new mode)" | sed -e "s/^old/NEW/;s/^new/old/;s/^NEW/new/" | git apply'
 ```
 
+### List merged branches
+```
+git branch --merged
+```
+
 ```
 git config core.fileMode false
 ```
