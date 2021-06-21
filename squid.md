@@ -2,6 +2,46 @@
 title: Squid
 ---
 
+## /etc/squid/conf.d/japan_proxy.conf
+```
+acl SSL_ports port 873          # rsync
+acl SSL_ports port 1883         # mqtt
+acl SSL_ports port 22           # ssh
+
+acl Safe_ports port 1883        # mqtt
+acl Safe_ports port 22          # ssh
+acl Safe_ports port 873         # rsync
+acl Safe_ports port 990         # ftps
+acl Safe_ports port 9418        # git://
+acl Safe_ports port 11371       # GPG keyserver ?
+
+# SMTP
+acl SSL_ports port 465
+acl Safe_ports port 995
+acl Safe_ports port 465
+
+acl mynetworks src "/etc/squid/acl/mynetworks.acl"
+acl bypass_sites dstdomain "/etc/squid/acl/bypass-sites.acl"
+acl bypass_address dst "/etc/squid/acl/bypass-address.acl"
+acl bad_sites dstdomain "/etc/squid/acl/bad-sites.acl"
+
+http_access allow mynetworks
+http_access deny bad_sites
+
+always_direct allow bypass_sites
+always_direct allow bypass_address
+
+cache deny bypass_sites
+cache deny bypass_address
+
+cache_peer PROXY_SERVER_IP parent 8080 0 no-query no-digest
+never_direct deny bad_sites
+never_direct allow all
+
+# always_direct allow bypass_sites
+# always_direct allow bypass_address
+```
+
 ## squid.conf
 ```
 acl SSL_ports port 443
