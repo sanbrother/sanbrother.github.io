@@ -2,6 +2,11 @@
 title : Linux
 ---
 
+## Disable auto sleep
+```bash
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+```
+
 ## Java HOME
 ```bash
 # /etc/profile.d/java_home.sh
