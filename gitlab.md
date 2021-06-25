@@ -1,7 +1,7 @@
 ### 问题排除
 1. Debian的服务无法启动。似乎是默认的Target不对
 ```bash
-set-default multi-user.target
+systemctl set-default multi-user.target
 ```
 
 ### Install
