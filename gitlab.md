@@ -1,9 +1,8 @@
 ### 问题排除
-1. Debian的服务无法启动。似乎是某些Target没有启动
+1. Debian的服务无法启动。似乎是默认的Target不对
 ```bash
-systemctl list-dependencies multi-user.target
+set-default multi-user.target
 ```
-发现isc-dhcp-server.service是红色的
 
 ### Install
 ```
