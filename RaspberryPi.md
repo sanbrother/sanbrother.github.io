@@ -1,6 +1,7 @@
 ---
 title: Raspberry Pi
 ---
+* [Android 9 Pie device configuration for Raspbery Pi 3 Model B & B+](https://github.com/brobwind/pie-device-brobwind-rpi3)
 
 * [How to set up up your Raspberry Pi to have a static IP address](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)  
 * [Livestreaming with a Raspberry Pi](https://ant.sr/streaming-webcam-raspi/)  
