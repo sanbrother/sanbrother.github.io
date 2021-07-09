@@ -2,6 +2,16 @@
 title: Raspberry Pi
 ---
 * [Android 9 Pie device configuration for Raspbery Pi 3 Model B & B+](https://github.com/brobwind/pie-device-brobwind-rpi3)
+
+```bash
+# Fix : ImportError: No module named mako.template
+sudo apt-get install python3-pip libyaml-dev
+sudo pip install prettytable Mako pyaml dateutils --upgrade
+
+# Fix : Can only handle FAT with 1 reserved sector
+https://github.com/brobwind/pie-device-brobwind-rpi3/issues/4
+```
+
 #### Build Kernel
 ```bash
 # 1. Run configuration
