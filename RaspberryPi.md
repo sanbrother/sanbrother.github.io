@@ -5,7 +5,7 @@ title: Raspberry Pi
 
 ```bash
 # Fix : ImportError: No module named mako.template
-sudo apt-get install python3-pip libyaml-dev
+sudo apt-get install python-pip libyaml-dev
 sudo pip install prettytable Mako pyaml dateutils --upgrade
 
 # Fix : Can only handle FAT with 1 reserved sector
