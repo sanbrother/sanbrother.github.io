@@ -2,6 +2,22 @@
 title: Raspberry Pi
 ---
 * [Android 9 Pie device configuration for Raspbery Pi 3 Model B & B+](https://github.com/brobwind/pie-device-brobwind-rpi3)
+#### Build Kernel
+```bash
+# 1. Run configuration
+export INSTALL_ROOT=`pwd`/../device/brobwind/rpi3/boot/kernel-v4.14
+export CROSS_COMPILE=`pwd`/../prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-androidkernel-
+INSTALL_PATH=${INSTALL_ROOT} INSTALL_MOD_PATH=${INSTALL_ROOT} ARCH=arm64 make bcmrpi3_defconfig
+
+# 2. Build kernel image
+INSTALL_PATH=${INSTALL_ROOT} INSTALL_MOD_PATH=${INSTALL_ROOT} ARCH=arm64 make -j 4
+
+# 3. Build dtbs
+INSTALL_PATH=${INSTALL_ROOT} INSTALL_MOD_PATH=${INSTALL_ROOT} ARCH=arm64 make -j 4 dtbs
+# 4. Install target
+INSTALL_PATH=${INSTALL_ROOT} INSTALL_MOD_PATH=${INSTALL_ROOT} ARCH=arm64 make dtbs_install
+INSTALL_PATH=${INSTALL_ROOT} INSTALL_MOD_PATH=${INSTALL_ROOT} ARCH=arm64 make install
+```
 
 * [How to set up up your Raspberry Pi to have a static IP address](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)  
 * [Livestreaming with a Raspberry Pi](https://ant.sr/streaming-webcam-raspi/)  
