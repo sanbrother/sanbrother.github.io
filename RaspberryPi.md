@@ -11,6 +11,10 @@ sudo pip install prettytable Mako pyaml dateutils --upgrade
 # Fix : Can only handle FAT with 1 reserved sector
 https://github.com/brobwind/pie-device-brobwind-rpi3/issues/4
 ```
+#### Kernel config
+```bash
+sudo modprobe configs; zcat /proc/config.gz
+```
 
 #### Build Kernel
 ```bash
