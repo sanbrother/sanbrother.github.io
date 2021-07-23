@@ -1,6 +1,12 @@
 ---
 title : Linux
 ---
+## Thunderbird Tray
+```bash
+add-apt-repository ppa:linuxuprising/apps
+apt-get update
+apt install birdtray
+```
 
 ## Disable auto sleep
 ```bash
