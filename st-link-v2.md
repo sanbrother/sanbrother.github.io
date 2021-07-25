@@ -7,4 +7,4 @@
 NanoDAP => ST Link v2.1
   注意点：
   * NanoDAP要接入USB端口（可能是ST Link的3.3V供电不够用）
-  * ST Link Utility用4.5版本的
+  * ST Link Utility用4.5版本的NG
