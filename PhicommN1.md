@@ -9,6 +9,17 @@
 * [斐讯N1拆机 芯片拆解](https://www.acwifi.net/4312.html)
 * [Setting up HLS live streaming server using NGINX + nginx-rtmp-module on Ubuntu](https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/)
 
+## Amlogic codenames for reference designs in P SDK
+```
+ampere – S905X
+braun – S905D
+curie – S805X
+darwin – T962E
+einstein – T962X
+franklin – S905X2
+galilei – A311D
+```
+
 ## Aria2 (RPC)
 ```
 ##files
