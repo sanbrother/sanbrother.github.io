@@ -22,6 +22,7 @@ dpkg -P gitlab-ce
 ```
 
 ### SMTP
+域名解析问题，注意/etc/resolv.conf这个配置文件（resolvconf命令）
 ```
 gitlab_rails['smtp_enable'] = true
 gitlab_rails['smtp_address'] = "TODO"
