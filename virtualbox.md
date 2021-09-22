@@ -1,6 +1,9 @@
 https://www.virtualbox.org/manual/ch09.html
 
-
+```bash
+VBoxManage internalcommands createrawvmdk -filename ssk.vmdk -rawdisk /dev/sdd
+sudo usermod -a -G disk $USER
+```
 
 ```
 VBoxManage setextradata "VM name" "VBoxInternal/Devices/pcbios/0/Config/DmiSystemVendor"      "Compaq"
