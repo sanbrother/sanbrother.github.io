@@ -1,3 +1,11 @@
+## 解决文件浏览器不能通过键盘快速跳转（而是进行搜索的动作）的问题
+```
+apt-get remove nautilus
+
+add-apt-repository ppa:lubomir-brindza/nautilus-typeahead
+apt-get install nautilus
+```
+
 ---
 title : Linux
 ---
