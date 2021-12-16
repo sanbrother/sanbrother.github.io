@@ -1,3 +1,12 @@
+## dotnet-sdk-2.2
+```bash
+wget -q https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
+sudo apt-get update
+
+sudo apt-get install dotnet-sdk-2.2
+```
+
 ## 部分汉字显示不正常的问题
 /etc/fonts/conf.avail/64-language-selector-prefer.conf
 
