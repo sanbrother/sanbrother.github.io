@@ -1,0 +1,6 @@
+```
+// Do not verify peer certificate
+Acquire::https::Verify-Peer "false";
+// Do not verify that certificate name matches server name
+Acquire::https::Verify-Host "false";
+```
