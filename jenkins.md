@@ -4,7 +4,10 @@ title: Jenkins
 
 ## pyenv
 ```
-apt-get install python3-venv
+sudo apt-get -y install python3-venv
+
+sudo apt-get -y install python-pip
+python2.7 -m pip install virtualenv
 ```
 
 ## Incorrect java version?
