@@ -2,6 +2,11 @@
 title: Jenkins
 ---
 
+## pyenv
+```
+apt-get install python3-venv
+```
+
 ## Incorrect java version?
 ```
 apt-get install openjdk-8-jdk
