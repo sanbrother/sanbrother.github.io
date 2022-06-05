@@ -2,6 +2,7 @@
 ```
 apt-get install build-essential autoconf libtool libusb-dev pkg-config
 git clone https://github.com/nfc-tools/libnfc.git
+autoreconf -is
 # ./configure
 # PN532 Only
 ./configure --with-drivers=pn53x_usb --prefix=/usr --sysconfdir=/etc
