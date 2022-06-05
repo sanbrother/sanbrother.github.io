@@ -6,6 +6,9 @@ autoreconf -is
 # ./configure
 # PN532 Only
 ./configure --with-drivers=pn53x_usb --prefix=/usr --sysconfdir=/etc
+make && sudo make install
+sudo mkdir /etc/nfc
+sudo cp libnfc.conf.sample /etc/nfc/libnfc.conf
 ```
 
 ### PN532
