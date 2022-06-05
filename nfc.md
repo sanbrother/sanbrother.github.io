@@ -11,6 +11,14 @@ sudo mkdir /etc/nfc
 sudo cp libnfc.conf.sample /etc/nfc/libnfc.conf
 ```
 
+### build mfcuk
+```
+git clone https://github.com/nfc-tools/mfcuk.git
+autoreconf -is
+./configure
+make
+```
+
 ### PN532
 
 https://github.com/zhovner/mfdread  
