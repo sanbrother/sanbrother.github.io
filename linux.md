@@ -127,9 +127,11 @@ server time.neusoft.com iburst minpoll 8 maxpoll 14
 cp /boot/config-xxx .config
 make oldconfig
 make menuconfig
-make EXTRAVERSION=-mock -j$(nproc)
-sudo make modules_install
+
+make EXTRAVERSION=-mock -j$(nproc) && \
+sudo make INSTALL_MOD_STRIP=1 modules_install && \
 sudo make install
+
 # ???
 sudo update-grub
 ```
