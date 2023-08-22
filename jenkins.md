@@ -28,7 +28,7 @@ keytool -importcert -alias startssl -keystore /var/lib/jenkins/cacerts -storepas
 
 # /etc/default/jenkins
 ## JAVA_ARGS="-Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Djavax.net.ssl.trustStore=/var/lib/jenkins/cacerts -Djavax.net.ssl.trustStorePassword=password"
-JAVA_ARGS="-Djava.awt.headless=true -Dmail.smtp.starttls.enable=true mail.smtp.ssl.trust=*"
+JAVA_ARGS="-Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Dmail.smtp.ssl.trust=*"
 ```
 
 ## Install
