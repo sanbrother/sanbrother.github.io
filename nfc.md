@@ -133,6 +133,7 @@ Block0、是数据的前64个字节
 把手环靠近PN532、执行命令：
 
 nfc-mfclassic w a target.dmp (如果是写入UID卡、用W参数)
+# fc-mfclassic w A u target.dmp
 
 第一次好像提示了点什么错误信息、可以再写几次、就没有错误了
 ```
